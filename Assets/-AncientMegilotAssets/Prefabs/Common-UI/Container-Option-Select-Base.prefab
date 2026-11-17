@@ -185,6 +185,22 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 4398704655518715249}
+    - target: {fileID: 5236766957644985904, guid: 9101d63c216b8b2429297b4c25a6904e, type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236766957644985904, guid: 9101d63c216b8b2429297b4c25a6904e, type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236766957644985904, guid: 9101d63c216b8b2429297b4c25a6904e, type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236766957644985904, guid: 9101d63c216b8b2429297b4c25a6904e, type: 3}
+      propertyPath: m_RaycastPadding.z
+      value: -200
+      objectReference: {fileID: 0}
     - target: {fileID: 7749744566736776500, guid: 9101d63c216b8b2429297b4c25a6904e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
