@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1753284136339837510}
   - component: {fileID: 2464164162112692303}
   m_Layer: 5
-  m_Name: Side-Container-Vertical-&-Bg-Image
+  m_Name: Main-Container-Side-Vertical-Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

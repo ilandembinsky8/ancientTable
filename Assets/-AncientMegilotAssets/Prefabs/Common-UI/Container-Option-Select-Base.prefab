@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 4398704655518715249}
   - component: {fileID: 59969921302599421}
   m_Layer: 5
-  m_Name: Puzzle-OptionSelect
+  m_Name: Container-Option-Select-Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
