@@ -155,13 +155,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game1Manager
   _mainContainer: {fileID: 1801957387028139906}
-  _sideListContainer: {fileID: 571025272477591827}
-  _defaultMainIntroductionContainer: {fileID: 4893321788529353999}
+  _navigationBar: {fileID: 553425360107973619}
+  _sideListContainer: {fileID: 5899003347651191010}
+  _defaultMainIntroductionContainer: {fileID: 8795414313939666113}
   _mainHeaderWhiteTextObj: {fileID: 2841837878381001105}
   _mainHeaderYellowTextObj: {fileID: 3375035205159502705}
   _sideHeaderYellowTextObj: {fileID: 1127888910679208323}
   _sideOptionSelectPrefab: {fileID: 6952154916991320505, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
-  _thisGamePrefab: {fileID: 0}
+  _gameMainPrefab: {fileID: 8466408465646495452}
 --- !u!114 &6919592591898045618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +469,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2405d0692a0dfa740b3320fc7c9a6d01, type: 3}
+--- !u!114 &553425360107973619 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 408814382028995745, guid: 2405d0692a0dfa740b3320fc7c9a6d01, type: 3}
+  m_PrefabInstance: {fileID: 144766019452606290}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff5d00840517b324cba6b0d956d84216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NavigationBar
 --- !u!1 &1801957387028139906 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1946568098315311312, guid: 2405d0692a0dfa740b3320fc7c9a6d01, type: 3}
@@ -495,16 +507,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!1 &4893321788529353999 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4749852646162936413, guid: 2405d0692a0dfa740b3320fc7c9a6d01, type: 3}
-  m_PrefabInstance: {fileID: 144766019452606290}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5983470425648055638 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5839973869712822788, guid: 2405d0692a0dfa740b3320fc7c9a6d01, type: 3}
   m_PrefabInstance: {fileID: 144766019452606290}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8795414313939666113 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8650809442365313939, guid: 2405d0692a0dfa740b3320fc7c9a6d01, type: 3}
+  m_PrefabInstance: {fileID: 144766019452606290}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdd547f1b8c6fc4d9389382328a361e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IntroductionHandler
 --- !u!1001 &1216104213873977159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1155,11 +1173,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1203472638432784036, guid: 5eb317f2bf8f180479ad8fe96f10f0d5, type: 3}
   m_PrefabInstance: {fileID: 1216104213873977159}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &571025272477591827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1660922416955412052, guid: 5eb317f2bf8f180479ad8fe96f10f0d5, type: 3}
-  m_PrefabInstance: {fileID: 1216104213873977159}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1127888910679208323 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2253885225777141444, guid: 5eb317f2bf8f180479ad8fe96f10f0d5, type: 3}
@@ -1171,3 +1184,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &5899003347651191010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4700913708522964901, guid: 5eb317f2bf8f180479ad8fe96f10f0d5, type: 3}
+  m_PrefabInstance: {fileID: 1216104213873977159}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5278c153c923845979dec720897236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SideScrollHandler
