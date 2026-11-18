@@ -6,15 +6,20 @@ public abstract class GameManagerBase : MonoBehaviour
     #region Serialized Fields
     [Header("Game Manager Base")]
     [SerializeField] protected GameObject _mainContainer;
-    [SerializeField] protected GameObject _sideListContainer;
-    [SerializeField] protected GameObject _defaultMainIntroductionContainer;
+    [SerializeField] protected NavigationBar _navigationBar;
+    [SerializeField] protected SideScrollHandler _sideListContainer;
+    [SerializeField] protected IntroductionHandler _defaultMainIntroductionContainer;
+
     [Header("Text Objects")]
     [SerializeField] protected TextMeshProUGUI _mainHeaderWhiteTextObj;
     [SerializeField] protected TextMeshProUGUI _mainHeaderYellowTextObj;
     [SerializeField] protected TextMeshProUGUI _sideHeaderYellowTextObj;
-    [Header("Replace Prefab to fit correct game variant")]
-    [SerializeField] protected GameObject _sideOptionSelectPrefab;
-    [SerializeField] protected GameObject _thisGamePrefab;
+
+    [Header("Replace with your specific variant")]
+    [Tooltip("Replace this prefab with the fitting variant.")]
+    [SerializeField] protected OptionSelectBase _sideOptionSelectPrefab;
+    [Tooltip("Replace this prefab with the actual game prefab that sits in the main container. This will replace _defaultMainIntroductionContainer once a level is selected and the button is pressed.")]
+    [SerializeField] protected GameObject _gameMainPrefab;
     #endregion
 
 
