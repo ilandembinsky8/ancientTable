@@ -15,10 +15,10 @@ public abstract class GameManagerBase : MonoBehaviour
     [SerializeField] protected TextMeshProUGUI _mainHeaderYellowTextObj;
     [SerializeField] protected TextMeshProUGUI _sideHeaderYellowTextObj;
 
-    [Header("Replace Prefab to fit correct prefab variant")]
+    [Header("Replace with your specific variant")]
     [Tooltip("Replace this prefab with the fitting variant.")]
-    [SerializeField] protected GameObject _sideOptionSelectPrefab;
-    [Tooltip("Replace this prefab with the fitting variant.")]
+    [SerializeField] protected OptionSelectBase _sideOptionSelectPrefab;
+    [Tooltip("Replace this prefab with the actual game prefab that sits in the main container. This will replace _defaultMainIntroductionContainer once a level is selected and the button is pressed.")]
     [SerializeField] protected GameObject _gameMainPrefab;
     #endregion
 

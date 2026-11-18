@@ -161,8 +161,8 @@ MonoBehaviour:
   _mainHeaderWhiteTextObj: {fileID: 2841837878381001105}
   _mainHeaderYellowTextObj: {fileID: 3375035205159502705}
   _sideHeaderYellowTextObj: {fileID: 1127888910679208323}
-  _sideOptionSelectPrefab: {fileID: 6952154916991320505, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
-  _gameMainPrefab: {fileID: 8466408465646495452}
+  _sideOptionSelectPrefab: {fileID: 3635286027992644752, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  _gameMainPrefab: {fileID: 2437913747325903560, guid: 657f8b176c672664d82d87035de42f0b, type: 3}
 --- !u!114 &6919592591898045618
 MonoBehaviour:
   m_ObjectHideFlags: 0
