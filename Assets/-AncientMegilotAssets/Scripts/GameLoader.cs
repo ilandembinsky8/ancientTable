@@ -13,7 +13,7 @@ public class GameLoader : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < quadrants.Length; i++)
         {
             if (gameIDs[i] > 0 && gameIDs[i] < 7)
                 LoadGameToQuadrant(gameIDs[i], i);
