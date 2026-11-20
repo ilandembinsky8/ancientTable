@@ -1,5 +1,6 @@
-using UnityEngine;
+using System.Drawing;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
@@ -17,6 +18,13 @@ public class KeyboardChar : MonoBehaviour
         charText.font = font;
     }
 
+    public void SetFontSize(float size)
+    {
+        if (charText == null || size <= 0)
+            return;
+
+        charText.fontSize = size;
+    }
 
 
     private void OnValidate()

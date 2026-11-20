@@ -9,6 +9,7 @@ public class KeyboardManager : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private TMP_FontAsset keyboardFont;
+    [SerializeField] private float fontSize;
 
     private void OnValidate()
     {
@@ -18,7 +19,10 @@ public class KeyboardManager : MonoBehaviour
         foreach (KeyboardChar character in keyboardChars)
         {
             if (character != null)
+            {
                 character.SetFont(keyboardFont);
+                character.SetFontSize(fontSize);
+            }
         }
     }
 }
