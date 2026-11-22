@@ -54,7 +54,7 @@ public abstract class GameManagerBase : MonoBehaviour
         _defaultMainIntroductionContainer.OnOptionSelected();
     }
 
-    private void InitilizeGame()
+    public void InitilizeGame()
     {
         _isGameVariationSelected = false;
         _gameMainPrefab.SetActive(false);
