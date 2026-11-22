@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848f69c004369c844b8f57b5c6e74a2a, type: 3}
+  m_Name: PuzzleSet_Qumran4-B
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleSetSO
+  id: Qumran4-B
+  title: "\u05E7\u05D5\u05DE\u05E8\u05D0\u05DF, \u05DE\u05E2\u05E8\u05D4 4 \u05D1'"
+  scrolls:
+  - {fileID: 11400000, guid: 585902f42c5517144a27c840716ece98, type: 2}
+  - {fileID: 11400000, guid: 94734e8d7d709d243b9a8d336af673eb, type: 2}
+  outlinePositions:
+  - {x: 140, y: 229}
+  - {x: 150.5, y: -278.5}
+  pileOrder:
+  - 4Q185_fragment_01
+  - 4Q185_fragment_03
+  - 4Q185_fragment_04
+  - 4Q185_fragment_06
+  - 4Q185_fragment_07
+  - 4Q185_fragment_08
+  - 4Q185_fragment_09
+  - 4Q185_fragment_10
+  - 4Q185_fragment_11
+  - 4Q185_fragment_12
+  - 4Q427_fragment_10
+  - 4Q427_fragment_01
+  - 4Q427_fragment_02
+  - 4Q427_fragment_03
+  - 4Q427_fragment_04
+  - 4Q427_fragment_05
+  - 4Q427_fragment_06
+  - 4Q427_fragment_07
+  - 4Q427_fragment_08
+  - 4Q427_fragment_09
+  - 4Q427_fragment_11
+  - 4Q427_fragment_12
+  - 4Q185_fragment_05
+  - 4Q185_fragment_02

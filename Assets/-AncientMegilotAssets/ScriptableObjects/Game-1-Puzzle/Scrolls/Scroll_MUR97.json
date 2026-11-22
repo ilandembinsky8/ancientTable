@@ -6,10 +6,10 @@
         {
             "pieceId": "MUR97_fragment_01",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -690.4,
+                "y": -251.4
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -174.39999389648438,
                 "y": 98.9000015258789
@@ -19,10 +19,10 @@
         {
             "pieceId": "MUR97_fragment_02",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -656.2,
+                "y": 70.6
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": 135.1999969482422,
                 "y": 47.70000076293945
@@ -32,13 +32,13 @@
         {
             "pieceId": "MUR97_fragment_03",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -656.0,
+                "y": -231.4
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -130.6999969482422,
-                "y": -137.10000610351563
+                "y": -137.10000610351562
             },
             "endRotation": 0.0
         }

@@ -6,10 +6,10 @@
         {
             "pieceId": "4Q427_fragment_01",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -649.5,
+                "y": -277.5
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -220.5,
                 "y": 161.6999969482422
@@ -19,10 +19,10 @@
         {
             "pieceId": "4Q427_fragment_02",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -584.5,
+                "y": 84.5
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -8.699999809265137,
                 "y": 152.0
@@ -32,10 +32,10 @@
         {
             "pieceId": "4Q427_fragment_03",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -698.5,
+                "y": 72.5
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -379.20001220703125,
                 "y": 143.39999389648438
@@ -45,10 +45,10 @@
         {
             "pieceId": "4Q427_fragment_04",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -592.0,
+                "y": -242.0
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": 246.1999969482422,
                 "y": 100.4000015258789
@@ -58,10 +58,10 @@
         {
             "pieceId": "4Q427_fragment_05",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -727.5,
+                "y": 232.5
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": 69.5999984741211,
                 "y": 98.0
@@ -71,10 +71,10 @@
         {
             "pieceId": "4Q427_fragment_06",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -703.0,
+                "y": 30.0
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -336.1000061035156,
                 "y": 42.5
@@ -84,10 +84,10 @@
         {
             "pieceId": "4Q427_fragment_07",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -628.5,
+                "y": -153.0
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -143.1999969482422,
                 "y": 43.400001525878906
@@ -97,10 +97,10 @@
         {
             "pieceId": "4Q427_fragment_08",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -610.5,
+                "y": 161.0
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -84.19999694824219,
                 "y": -74.30000305175781
@@ -110,10 +110,10 @@
         {
             "pieceId": "4Q427_fragment_09",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -640.0,
+                "y": -25.5
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": 217.1999969482422,
                 "y": -73.9000015258789
@@ -123,10 +123,10 @@
         {
             "pieceId": "4Q427_fragment_10",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -628.0,
+                "y": 15.5
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -182.3000030517578,
                 "y": -82.5
@@ -136,23 +136,23 @@
         {
             "pieceId": "4Q427_fragment_11",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -591.5,
+                "y": -147.0
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": 84.19999694824219,
-                "y": -150.60000610351563
+                "y": -150.60000610351562
             },
             "endRotation": 0.0
         },
         {
             "pieceId": "4Q427_fragment_12",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -836.5,
+                "y": 82.0
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -282.5,
                 "y": -187.3000030517578

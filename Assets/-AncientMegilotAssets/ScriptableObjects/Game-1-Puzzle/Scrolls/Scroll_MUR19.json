@@ -6,12 +6,12 @@
         {
             "pieceId": "megila_fragment_fold_aligned_01",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -656.2,
+                "y": -46.8
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
-                "x": -243.10000610351563,
+                "x": -243.10000610351562,
                 "y": 214.0
             },
             "endRotation": 0.0
@@ -19,10 +19,10 @@
         {
             "pieceId": "megila_fragment_fold_aligned_02",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -745.5,
+                "y": 212.4
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -25.700000762939453,
                 "y": 234.8000030517578
@@ -32,10 +32,10 @@
         {
             "pieceId": "megila_fragment_fold_aligned_03",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -717.5,
+                "y": 10.1
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": 198.5,
                 "y": 211.0
@@ -45,12 +45,12 @@
         {
             "pieceId": "megila_fragment_fold_aligned_04",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -613.1,
+                "y": 61.0
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
-                "x": -192.60000610351563,
+                "x": -192.60000610351562,
                 "y": -88.0
             },
             "endRotation": 0.0
@@ -58,12 +58,12 @@
         {
             "pieceId": "megila_fragment_fold_aligned_05",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -773.0,
+                "y": -280.0
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
-                "x": 144.60000610351563,
+                "x": 144.60000610351562,
                 "y": -77.5999984741211
             },
             "endRotation": 0.0
@@ -71,10 +71,10 @@
         {
             "pieceId": "megila_fragment_fold_aligned_06",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -607.1,
+                "y": -247.5
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": 309.0,
                 "y": -45.5
@@ -84,10 +84,10 @@
         {
             "pieceId": "megila_fragment_fold_aligned_07",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -699.3,
+                "y": -94.4
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -251.5,
                 "y": -282.70001220703125
@@ -97,10 +97,10 @@
         {
             "pieceId": "megila_fragment_fold_aligned_08",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -718.0,
+                "y": -69.4
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": -44.099998474121094,
                 "y": -195.6999969482422
@@ -110,10 +110,10 @@
         {
             "pieceId": "megila_fragment_fold_aligned_09",
             "startPosition": {
-                "x": 0.0,
-                "y": 0.0
+                "x": -718.1,
+                "y": 274.6
             },
-            "startRotation": 0.0,
+            "startRotation": 0,
             "endPosition": {
                 "x": 206.5,
                 "y": -239.1999969482422
