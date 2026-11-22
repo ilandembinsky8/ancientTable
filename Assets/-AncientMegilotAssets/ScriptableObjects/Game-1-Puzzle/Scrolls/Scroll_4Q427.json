@@ -1,7 +1,7 @@
 {
     "puzzleId": "4Q427",
-    "nameHebrew": "",
-    "numberAndNameEnglish": "4Q427 - 4QH",
+    "nameHebrew": "הודיות א'",
+    "numberAndNameEnglish": "4Q427 - 4QHodayot a",
     "pieces": [
         {
             "pieceId": "4Q427_fragment_01",
@@ -161,11 +161,11 @@
         }
     ],
     "site": "קומראן, מערה 4",
-    "period": "",
-    "material": "",
-    "handwritingType": "",
-    "language": "",
-    "script": "",
-    "info": "",
+    "period": "המאה ה-1 לפנה\"ס",
+    "material": "קלף",
+    "handwritingType": "חיבור כיתתי",
+    "language": "עברית",
+    "script": "מרובע",
+    "info": "עותק של מגילת ההודיות - מזמורי שבח והודיה לאל שנכתבו בחוגי כת קומראן. רבים מהם פותחים במילים \"אודכה אדוני\".",
     "translation": ""
 }
