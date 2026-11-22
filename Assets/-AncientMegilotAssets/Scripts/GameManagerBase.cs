@@ -22,7 +22,45 @@ public abstract class GameManagerBase : MonoBehaviour
     [SerializeField] protected GameObject _gameMainPrefab;
     #endregion
 
+    protected bool _isGameVariationSelected = false;
 
+    protected virtual void Start() { InitilizeGame(); }
+    protected virtual void OnEnable()
+    {
+        _defaultMainIntroductionContainer.SubscribeToIntroductionButtonPressed(TryStartGame);
+        _sideListContainer.OnAnySideOptionSelected += OnAnyLevelOptionSelected;
+    }
+    protected virtual void OnDisable()
+    {
+        _defaultMainIntroductionContainer.UnSubscribeFromIntroductionButtonPressed(TryStartGame);
+        _sideListContainer.OnAnySideOptionSelected -= OnAnyLevelOptionSelected;
+    }
+
+    protected virtual void TryStartGame()
+    {
+        if (!_isGameVariationSelected) { Debug.Log("<color=#36915f>Game Variation not selected.</color>"); return; }
+
+        Debug.Log("<color=green>Starting game...</color>");
+        _defaultMainIntroductionContainer.gameObject.SetActive(false);
+        _gameMainPrefab.SetActive(true);
+    }
+    protected virtual void OnGameEnded()
+    {
+        InitilizeGame();
+    }
+    protected virtual void OnAnyLevelOptionSelected()
+    {
+        _isGameVariationSelected = true;
+        _defaultMainIntroductionContainer.OnOptionSelected();
+    }
+
+    private void InitilizeGame()
+    {
+        _isGameVariationSelected = false;
+        _gameMainPrefab.SetActive(false);
+        _defaultMainIntroductionContainer.gameObject.SetActive(true);
+        _defaultMainIntroductionContainer.ResetInstructions();
+    }
 
     #region Navigation Methods
     public virtual void Home()

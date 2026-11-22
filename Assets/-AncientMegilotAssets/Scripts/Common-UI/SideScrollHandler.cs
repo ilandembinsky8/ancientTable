@@ -1,16 +1,35 @@
+using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class SideScrollHandler : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Action OnAnySideOptionSelected;
+    private List<OptionSelectBase> _optionButtons = new List<OptionSelectBase>();
+
+    private void Start()
     {
-        
+        foreach (OptionSelectBase optionButton in gameObject.GetComponentsInChildren<OptionSelectBase>())
+        {
+            AddOptionButton(optionButton);
+            optionButton.SubscribeToActiveOptionButton(OnAnyOptionButtonPressed);
+        }
+        Debug.Log($"<color=yellow>SideScrollHandler: Initialized with {_optionButtons.Count} option buttons</color>");
+    }
+    private void OnDisable()
+    {
+        foreach (OptionSelectBase optionButton in _optionButtons)
+        {
+            optionButton.UnSubscribeFromActiveOptionButton(OnAnyOptionButtonPressed);
+        }
+        _optionButtons.Clear();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddOptionButton(OptionSelectBase optionButton)
     {
-        
+        _optionButtons.Add(optionButton);
     }
+
+    private void OnAnyOptionButtonPressed() { OnAnySideOptionSelected?.Invoke(); }
+
 }
