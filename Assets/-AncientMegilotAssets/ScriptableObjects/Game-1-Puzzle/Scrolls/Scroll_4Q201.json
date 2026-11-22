@@ -6,106 +6,106 @@
         {
             "pieceId": "4Q201_fragment_01",
             "startPosition": {
-                "x": 0,
-                "y": 0
+                "x": 0.0,
+                "y": 0.0
             },
-            "startRotation": 0,
+            "startRotation": 0.0,
             "endPosition": {
-                "x": 0,
-                "y": 0
+                "x": -132.89999389648438,
+                "y": 227.10000610351563
             },
-            "endRotation": 0
+            "endRotation": 0.0
         },
         {
             "pieceId": "4Q201_fragment_02",
             "startPosition": {
-                "x": 0,
-                "y": 0
+                "x": 0.0,
+                "y": 0.0
             },
-            "startRotation": 0,
+            "startRotation": 0.0,
             "endPosition": {
-                "x": 0,
-                "y": 0
+                "x": 93.30000305175781,
+                "y": 218.60000610351563
             },
-            "endRotation": 0
+            "endRotation": 0.0
         },
         {
             "pieceId": "4Q201_fragment_03",
             "startPosition": {
-                "x": 0,
-                "y": 0
+                "x": 0.0,
+                "y": 0.0
             },
-            "startRotation": 0,
+            "startRotation": 0.0,
             "endPosition": {
-                "x": 0,
-                "y": 0
+                "x": 256.20001220703125,
+                "y": 250.1999969482422
             },
-            "endRotation": 0
+            "endRotation": 0.0
         },
         {
             "pieceId": "4Q201_fragment_04",
             "startPosition": {
-                "x": 0,
-                "y": 0
+                "x": 0.0,
+                "y": 0.0
             },
-            "startRotation": 0,
+            "startRotation": 0.0,
             "endPosition": {
-                "x": 0,
-                "y": 0
+                "x": -116.30000305175781,
+                "y": -11.0
             },
-            "endRotation": 0
+            "endRotation": 0.0
         },
         {
             "pieceId": "4Q201_fragment_05",
             "startPosition": {
-                "x": 0,
-                "y": 0
+                "x": 0.0,
+                "y": 0.0
             },
-            "startRotation": 0,
+            "startRotation": 0.0,
             "endPosition": {
-                "x": 0,
-                "y": 0
+                "x": 173.5,
+                "y": -9.0
             },
-            "endRotation": 0
+            "endRotation": 0.0
         },
         {
             "pieceId": "4Q201_fragment_06",
             "startPosition": {
-                "x": 0,
-                "y": 0
+                "x": 0.0,
+                "y": 0.0
             },
-            "startRotation": 0,
+            "startRotation": 0.0,
             "endPosition": {
-                "x": 0,
-                "y": 0
+                "x": -235.6999969482422,
+                "y": -103.80000305175781
             },
-            "endRotation": 0
+            "endRotation": 0.0
         },
         {
             "pieceId": "4Q201_fragment_07",
             "startPosition": {
-                "x": 0,
-                "y": 0
+                "x": 0.0,
+                "y": 0.0
             },
-            "startRotation": 0,
+            "startRotation": 0.0,
             "endPosition": {
-                "x": 0,
-                "y": 0
+                "x": -282.79998779296875,
+                "y": -252.6999969482422
             },
-            "endRotation": 0
+            "endRotation": 0.0
         },
         {
             "pieceId": "4Q201_fragment_08",
             "startPosition": {
-                "x": 0,
-                "y": 0
+                "x": 0.0,
+                "y": 0.0
             },
-            "startRotation": 0,
+            "startRotation": 0.0,
             "endPosition": {
-                "x": 0,
-                "y": 0
+                "x": -180.0,
+                "y": -221.10000610351563
             },
-            "endRotation": 0
+            "endRotation": 0.0
         }
     ],
     "site": "קומראן, מערה 4",
