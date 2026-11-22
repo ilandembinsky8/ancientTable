@@ -1,0 +1,30 @@
+{
+    "header": "בחרו מקבץ להרכבה",
+    "piecesLabelFormat": "{0} חלקים",
+    "sets": [
+        {
+            "title": "מערת מורבעת",
+            "pieceCount": 20,
+            "documents": [
+                { "id": "MUR19", "description": "פפירוס-כתב גירושין" },
+                { "id": "MUR97", "description": "רישום חשבונאי העוסק בדגנים" }
+            ]
+        },
+        {
+            "title": "מערת מורבעת",
+            "pieceCount": 20,
+            "documents": [
+                { "id": "MUR19", "description": "פפירוס-כתב גירושין" },
+                { "id": "MUR97", "description": "רישום חשבונאי העוסק בדגנים" }
+            ]
+        },
+        {
+            "title": "מערת מורבעת",
+            "pieceCount": 20,
+            "documents": [
+                { "id": "MUR19", "description": "פפירוס-כתב גירושין" },
+                { "id": "MUR97", "description": "רישום חשבונאי העוסק בדגנים" }
+            ]
+        }
+    ]
+}
