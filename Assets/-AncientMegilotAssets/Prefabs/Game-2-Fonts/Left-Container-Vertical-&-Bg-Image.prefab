@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 6867176846392055053}
   - component: {fileID: 8427395441008489809}
   - component: {fileID: 7787762183061886147}
+  - component: {fileID: 4355241784655893526}
   m_Layer: 5
   m_Name: FontsScroll
   m_TagString: Untagged
@@ -287,7 +288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ScrollRect
   m_Content: {fileID: 2856833165345619732}
   m_Horizontal: 0
-  m_Vertical: 0
+  m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
@@ -303,6 +304,51 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4355241784655893526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362773827807919639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb428acc9b182554db220de27bfc3348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollCenterScaler
+  _scrollRect: {fileID: 7787762183061886147}
+  _contentLayout: {fileID: 5301741567965620795}
+  _edgeScale: 0.9
+  _falloff: 0.5
+  _curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _startCentered: 1
+  _snapToCenter: 1
+  _snapSpeed: 12
+  _snapVelocity: 60
+  _snapDelay: 0.15
 --- !u!1 &6936622939576549547
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +447,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (2)
@@ -503,6 +553,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (13)
@@ -605,6 +659,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (14)
@@ -707,6 +765,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (6)
@@ -809,6 +871,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (4)
@@ -911,6 +977,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (10)
@@ -1013,6 +1083,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (3)
@@ -1115,6 +1189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (11)
@@ -1217,6 +1295,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (9)
@@ -1421,6 +1503,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (7)
@@ -1523,6 +1609,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (8)
@@ -1625,6 +1715,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (1)
@@ -1829,6 +1923,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (12)
@@ -1931,6 +2029,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856833165345619732}
     m_Modifications:
+    - target: {fileID: 3198792673530318291, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
+      propertyPath: _scriptTypeId
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4955992475132011260, guid: c129e6741e2ad9a48b9df40663b8a217, type: 3}
       propertyPath: m_Name
       value: SelectedFontBTN (5)
