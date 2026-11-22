@@ -1,7 +1,7 @@
 {
-    "puzzleId": "4Q22",
+    "puzzleId": "Qumran4-A",
     "nameHebrew": "פליאו-שמות",
-    "numberAndNameEnglish": "4Q22 - 4QpaleoExod m",
+    "numberAndNameEnglish": "4Q22 - 4Q",
     "pieces": [
         {
             "pieceId": "4Q22_fragment_01",
@@ -161,9 +161,10 @@
         }
     ],
     "site": "קומראן, מערה 4",
-    "period": "חשמונאית (100–25 לפנה\"ס)",
+    "period": "חשמונאית",
     "material": "קלף",
-    "handwritingType": "מקראי",
+    "handwritingType": "חיבורים מקראיים",
+    "compositionType": "",
     "language": "עברית",
     "script": "עברי קדום",
     "info": "עותק של ספר שמות שנכתב בכתב העברי הקדום, הכתב של תקופת בית ראשון, אף שהועתק מאות שנים אחרי שיצא משימוש. בנוסח שלו יש הרחבות שדומות לנוסח התורה השומרונית.",

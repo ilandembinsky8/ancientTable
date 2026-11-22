@@ -1,7 +1,7 @@
 {
-    "puzzleId": "Puzzle-1",
-    "nameHebrew": "",
-    "numberAndNameEnglish": "",
+    "puzzleId": "Murabbaat",
+    "nameHebrew": "פפירוס-כתב גירושין",
+    "numberAndNameEnglish": "MUR19",
     "pieces": [
         {
             "pieceId": "megila_fragment_fold_aligned_01",
@@ -121,12 +121,13 @@
             "endRotation": 0
         }
     ],
-    "site": "",
-    "period": "",
-    "material": "",
-    "handwritingType": "",
-    "language": "",
-    "script": "",
+    "site": "ואדי מרבעאת",
+    "period": "רומית",
+    "material": "פפירוס",
+    "handwritingType": "תעודות",
+    "compositionType": "",
+    "language": "ארמית",
+    "script": "מרובע",
     "info": "",
     "translation": ""
 }

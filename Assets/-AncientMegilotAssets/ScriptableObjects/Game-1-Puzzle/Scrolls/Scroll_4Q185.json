@@ -1,7 +1,7 @@
 {
-    "puzzleId": "4Q185",
-    "nameHebrew": "חיבור חכמה",
-    "numberAndNameEnglish": "4Q185 - 4QSapiential Work",
+    "puzzleId": "Qumran4-B",
+    "nameHebrew": "מגילת חכמה ואזהרה",
+    "numberAndNameEnglish": "4Q185 - 4Q",
     "pieces": [
         {
             "pieceId": "4Q185_fragment_01",
@@ -161,9 +161,10 @@
         }
     ],
     "site": "קומראן, מערה 4",
-    "period": "המאה ה-1 לפנה\"ס",
+    "period": "חשמונאית",
     "material": "קלף",
-    "handwritingType": "ספרות חכמה",
+    "handwritingType": "חיבורים לא מקראיים",
+    "compositionType": "",
     "language": "עברית",
     "script": "מרובע",
     "info": "חיבור מספרות החכמה שקורא לשומעים ללכת בדרכי החכמה ובתורת האל, ומזכיר את קוצר חיי האדם.",

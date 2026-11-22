@@ -1,5 +1,5 @@
 {
-    "puzzleId": "MUR97",
+    "puzzleId": "Murabbaat",
     "nameHebrew": "רישום חשבונאי העוסק בדגנים",
     "numberAndNameEnglish": "MUR97",
     "pieces": [
@@ -43,12 +43,13 @@
             "endRotation": 0
         }
     ],
-    "site": "מערת מורבעת",
-    "period": "",
-    "material": "",
-    "handwritingType": "",
-    "language": "",
-    "script": "",
+    "site": "ואדי מרבעאת",
+    "period": "רומית",
+    "material": "קלף",
+    "handwritingType": "תעודות",
+    "compositionType": "",
+    "language": "יוונית",
+    "script": "יווני",
     "info": "",
     "translation": ""
 }

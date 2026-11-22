@@ -1,7 +1,7 @@
 {
-    "puzzleId": "4Q201",
-    "nameHebrew": "חנוך א' (ארמית)",
-    "numberAndNameEnglish": "4Q201 - 4QEnoch a ar",
+    "puzzleId": "Qumran4-A",
+    "nameHebrew": "חנוך",
+    "numberAndNameEnglish": "4Q201 - 4Q",
     "pieces": [
         {
             "pieceId": "4Q201_fragment_01",
@@ -109,9 +109,10 @@
         }
     ],
     "site": "קומראן, מערה 4",
-    "period": "המאה ה-2 לפנה\"ס",
+    "period": "חשמונאית",
     "material": "קלף",
-    "handwritingType": "חיבור לא מקראי",
+    "handwritingType": "חיבורים לא מקראיים",
+    "compositionType": "",
     "language": "ארמית",
     "script": "מרובע",
     "info": "אחד העותקים העתיקים ביותר של ספר חנוך, מתוך \"ספר העירים\" - סיפור המלאכים שירדו לארץ. הספר לא נכנס לתנ\"ך, ועד הגילוי בקומראן היה מוכר בעיקר מתרגום לגעז (אתיופית).",

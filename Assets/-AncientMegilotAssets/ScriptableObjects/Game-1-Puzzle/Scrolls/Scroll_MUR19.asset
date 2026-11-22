@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ee0c3b805d59349b316405f0287901, type: 3}
-  m_Name: Scroll_Puzzle-1
+  m_Name: Scroll_MUR19
   m_EditorClassIdentifier: Assembly-CSharp::ScrollDataSO
   _json: {fileID: 4900000, guid: 6419f7a6ae0aa5d4ea0cebeb505225f8, type: 3}
   image: {fileID: 7175521830830924091, guid: 48664a07a4312aa42a8ea44e90852549, type: 3}

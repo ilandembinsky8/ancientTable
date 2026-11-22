@@ -14,6 +14,7 @@ public class ScrollData
     public string period;                // תקופה
     public string material;              // חומר
     public string handwritingType;       // סוג כתב יד
+    public string compositionType;       // סוג חיבור (shown on the microscope cards)
     public string language;              // שפת כתב
     public string script;                // כתב
     public string info;                  // מידע על המגילה
