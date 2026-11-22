@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ee0c3b805d59349b316405f0287901, type: 3}
+  m_Name: Scroll_MUR97
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollDataSO
+  _json: {fileID: 4900000, guid: 6a4815a1100ef474894dd26aea5cf7cc, type: 3}
+  image: {fileID: 7214031281412726669, guid: 5da96b6301e9cdd498e5ad33271cc8aa, type: 3}
+  pieceSprites:
+  - {fileID: 3106581592839261748, guid: c80dd10b7165b174ea271311a0a91a91, type: 3}
+  - {fileID: 7306178675089923711, guid: 2811c79f8bc7dc44f856dd07bc4ce643, type: 3}
+  - {fileID: -857117995689458858, guid: 491ee747b0a293d40ab453b024639e5b, type: 3}

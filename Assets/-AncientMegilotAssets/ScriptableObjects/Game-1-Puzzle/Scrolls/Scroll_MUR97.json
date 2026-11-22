@@ -1,0 +1,54 @@
+{
+    "puzzleId": "MUR97",
+    "nameHebrew": "רישום חשבונאי העוסק בדגנים",
+    "numberAndNameEnglish": "MUR97",
+    "pieces": [
+        {
+            "pieceId": "MUR97_fragment_01",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "MUR97_fragment_02",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "MUR97_fragment_03",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        }
+    ],
+    "site": "מערת מורבעת",
+    "period": "",
+    "material": "",
+    "handwritingType": "",
+    "language": "",
+    "script": "",
+    "info": "",
+    "translation": ""
+}

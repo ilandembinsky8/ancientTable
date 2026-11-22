@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ee0c3b805d59349b316405f0287901, type: 3}
+  m_Name: Scroll_Puzzle-1
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollDataSO
+  _json: {fileID: 4900000, guid: 6419f7a6ae0aa5d4ea0cebeb505225f8, type: 3}
+  image: {fileID: 7175521830830924091, guid: 48664a07a4312aa42a8ea44e90852549, type: 3}
+  pieceSprites:
+  - {fileID: -328894646899389590, guid: 671781c0c3a43ea41b9a895e59e36a92, type: 3}
+  - {fileID: 2574571362206375827, guid: 9b73f7f889083f34bade05b59b781bea, type: 3}
+  - {fileID: 675543482936217676, guid: 36e1c476429750a4da433b6527e92c6d, type: 3}
+  - {fileID: -5329198247320433978, guid: 519bcde5d8a57cb4eba7c2b339996ab5, type: 3}
+  - {fileID: -6980046823936671330, guid: fd6fc9ac14dcb5745bacee4840f55798, type: 3}
+  - {fileID: 7019610532721707249, guid: 6a59cd97baa83be4b8afd37b051a11c4, type: 3}
+  - {fileID: 3579196873190145986, guid: 28465b4dc07f2ff458b47677cc9a58c5, type: 3}
+  - {fileID: 2102161596216566898, guid: fbfb9dd38b2854a46b77d08ffc338645, type: 3}
+  - {fileID: 8889918643060780904, guid: bf955af7c63b5424292ad4cb53ab3f8e, type: 3}

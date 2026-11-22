@@ -1,0 +1,132 @@
+{
+    "puzzleId": "Puzzle-1",
+    "nameHebrew": "",
+    "numberAndNameEnglish": "",
+    "pieces": [
+        {
+            "pieceId": "megila_fragment_fold_aligned_01",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "megila_fragment_fold_aligned_02",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "megila_fragment_fold_aligned_03",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "megila_fragment_fold_aligned_04",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "megila_fragment_fold_aligned_05",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "megila_fragment_fold_aligned_06",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "megila_fragment_fold_aligned_07",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "megila_fragment_fold_aligned_08",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        },
+        {
+            "pieceId": "megila_fragment_fold_aligned_09",
+            "startPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "startRotation": 0,
+            "endPosition": {
+                "x": 0,
+                "y": 0
+            },
+            "endRotation": 0
+        }
+    ],
+    "site": "",
+    "period": "",
+    "material": "",
+    "handwritingType": "",
+    "language": "",
+    "script": "",
+    "info": "",
+    "translation": ""
+}

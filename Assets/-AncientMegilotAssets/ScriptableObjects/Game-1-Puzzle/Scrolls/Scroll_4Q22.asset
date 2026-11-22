@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ee0c3b805d59349b316405f0287901, type: 3}
+  m_Name: Scroll_4Q22
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollDataSO
+  _json: {fileID: 4900000, guid: be4684ab5fea70f44b481d682c6e1c5e, type: 3}
+  image: {fileID: 9131344583130487916, guid: 66f38bc24a487734da045b88e8c6ed6e, type: 3}
+  pieceSprites:
+  - {fileID: -1659796354422202201, guid: c7877a41450350047882a6fe8cf11b56, type: 3}
+  - {fileID: -7003971221992329509, guid: 19f0532c113eabf41ac05636cc79d0d9, type: 3}
+  - {fileID: -2427393459255430364, guid: 0346200089ec9f84d96187adb0381bd7, type: 3}
+  - {fileID: -1522893700514313385, guid: f898cc1de021aa049bd1e9c4aba9577b, type: 3}
+  - {fileID: 8406738653254282877, guid: 82a9b231754767d44895bbf9bcc0d7e6, type: 3}
+  - {fileID: 4114831214086521153, guid: 8503f3d845f8c7045af90b82c452b437, type: 3}
+  - {fileID: 2365703508551827977, guid: 567511309d3aaa44dbfd1a84b1b20e91, type: 3}
+  - {fileID: -1395280824863378472, guid: 4b9a81e4ef023c04cbf66b28430a446c, type: 3}
+  - {fileID: -2152550068052578924, guid: 90385a28ed3915445a34abb333476184, type: 3}
+  - {fileID: -6239586992617629207, guid: 37fe81b81f89e17419cdedeacd3ecb26, type: 3}
+  - {fileID: 6678340163153835378, guid: 4823244732d653a4ebf955a2ffccee3f, type: 3}
+  - {fileID: 3884545895488205788, guid: e8db4845b2e7fb441a5cd8b1947b98bc, type: 3}
