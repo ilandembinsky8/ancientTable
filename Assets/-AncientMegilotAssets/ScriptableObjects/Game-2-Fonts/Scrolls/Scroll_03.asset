@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0654de6daf4868f44af48ced5dbdb3ee, type: 3}
   m_Name: Scroll_03
   m_EditorClassIdentifier: Assembly-CSharp::ScrollSO
-  title: 3
-  location: 3
-  catalogId: 3
+  title: "\u05D0\u05D9\u05D2\u05E8\u05EA \u05D1\u05E8 \u05DB\u05D5\u05DB\u05D1\u05D0"
+  location: "\u05DE\u05E2\u05E8\u05EA \u05E7\u05D5\u05DE\u05E8\u05D0\u05DF 4"
+  catalogId: Hev 57
   image: {fileID: 21300000, guid: bb87aa46cb539c74c94d16c3e5167bdd, type: 3}
-  correctScript: {fileID: 11400000, guid: ff2625ae37290074ca84c35a95155f36, type: 2}
+  correctScript: {fileID: 11400000, guid: 29afa60c204b2b448be1997ae65fe59f, type: 2}

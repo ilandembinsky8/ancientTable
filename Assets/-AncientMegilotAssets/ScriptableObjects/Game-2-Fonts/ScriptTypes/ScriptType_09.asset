@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcb30ea318dcdf4faca75dbb0889a23, type: 3}
   m_Name: ScriptType_09
   m_EditorClassIdentifier: Assembly-CSharp::ScriptTypeSO
-  displayName: 9
+  id: 9
+  displayName: "\u05DB\u05EA\u05D1 \u05E9\u05D5\u05DE\u05E8\u05D5\u05E0\u05D9"
   sampleText: 9
   displayFont: {fileID: 0}

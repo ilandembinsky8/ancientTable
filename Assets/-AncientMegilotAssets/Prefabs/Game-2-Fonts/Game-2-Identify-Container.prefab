@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7929741042429585930}
+  - component: {fileID: 1438117377631060780}
   m_Layer: 5
   m_Name: Scroll-Container
   m_TagString: Untagged
@@ -36,6 +37,28 @@ RectTransform:
   m_AnchoredPosition: {x: 97, y: 115}
   m_SizeDelta: {x: 1163, y: 815}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1438117377631060780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2402366563172090230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ddb6ea5aab0d24c844330d0f3ecf58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FontScrollHandler
+  _scrollImage: {fileID: 1458261990065182792}
+  _onScrollShown:
+    m_PersistentCalls:
+      m_Calls: []
+  _onCorrect:
+    m_PersistentCalls:
+      m_Calls: []
+  _onWrong:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4090478892759910573
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,11 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861eb4b468002fc458f05b3b22911b9f, type: 3}
   m_Name: Game2Content
   m_EditorClassIdentifier: Assembly-CSharp::Game2ContentSO
-  mainTitle: "\u05E1\u05D5\u05D3 \u05D4\u05DE\u05D9\u05DC\u05D9\u05DD \u05D4\u05D0\u05D1\u05D5\u05D3\u05D5\u05EA"
-  mainSubtitle: "\u05D7\u05E7\u05E8 \u05D4\u05DB\u05EA\u05D1"
-  scriptListHeader: "\u05D6\u05D9\u05D4\u05D5\u05D9 \u05E1\u05D5\u05D2 \u05D4\u05DB\u05EA\u05D1"
-  scriptListHint: "\u05DC\u05D7\u05E6\u05D5 \u05E2\u05DC \u05D0\u05D5\u05EA \u05DC\u05D4\u05D3\u05D2\u05E9\u05D4 \u05D1\u05DE\u05D2\u05D9\u05DC\u05D4"
-  scrollListHeader: "\u05D1\u05D7\u05E8\u05D5 \u05E7\u05D8\u05E2 \u05DC\u05E4\u05E2\u05E0\u05D5\u05D7"
   scriptTypes:
   - {fileID: 11400000, guid: 191e271fbba0ca1479e78ca39194473f, type: 2}
   - {fileID: 11400000, guid: b2a09f2aa59857349a2061787705fd0a, type: 2}
@@ -28,6 +23,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 29afa60c204b2b448be1997ae65fe59f, type: 2}
   - {fileID: 11400000, guid: ede1808565ac0014e894fcef9698b63d, type: 2}
   - {fileID: 11400000, guid: c7877ddacf55dde4c8612650941b6d77, type: 2}
+  - {fileID: 11400000, guid: 0678d15e8042706499a537acfa994a05, type: 2}
+  - {fileID: 11400000, guid: 5848d4725354a394fb12177a796199ca, type: 2}
+  - {fileID: 11400000, guid: cb8012a8935a8a94da47e3117a9f70a1, type: 2}
+  - {fileID: 11400000, guid: 7365c15b29f653e46b593ebd739504a6, type: 2}
   scrolls:
   - {fileID: 11400000, guid: 9afe8ae2d394ce346b4fb3ad2794eba1, type: 2}
   - {fileID: 11400000, guid: 10f33bf7efa43b4499781c8410ce81f5, type: 2}

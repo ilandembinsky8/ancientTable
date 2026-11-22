@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ScriptType", menuName = "Ancient Megilot/Game 2/Script Type")]
 public class ScriptTypeSO : ScriptableObject
 {
+    [Tooltip("Unique id used to look this script type up, e.g. \"square-hebrew\".")]
+    public string id;
+
     [Tooltip("Name shown in the list, e.g. \"כתב עברי מרובע\".")]
     public string displayName;
 
