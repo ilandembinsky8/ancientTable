@@ -12,6 +12,7 @@ public class ArduinoManager : MonoBehaviour
     public static ArduinoManager Instance { get; private set; }// Singleton instance
     public int PotentiometerValue => potentiometerValue;
     public float NormalizedValue => potentiometerValue / 1023f;
+    public bool HasReading { get; private set; }
 
     //private variables
     private SerialPort _port;
@@ -30,6 +31,7 @@ public class ArduinoManager : MonoBehaviour
 
     private void OnEnable()
     {
+        HasReading = false;
         _receivedText = "";
 
         try
@@ -49,6 +51,8 @@ public class ArduinoManager : MonoBehaviour
     {
         if (_port == null)
             return;
+
+        HasReading = false;
 
         try
         {
@@ -80,9 +84,10 @@ public class ArduinoManager : MonoBehaviour
                 string line = _receivedText.Substring(0, newlineIndex).Trim();
                 _receivedText = _receivedText.Substring(newlineIndex + 1);
 
-                if (int.TryParse(line, out int value))
+                if (int.TryParse(line, out int value) && value >= 0 && value <= 1023)
                 {
                     potentiometerValue = value;
+                    HasReading = true;
                 }
             }
         }
