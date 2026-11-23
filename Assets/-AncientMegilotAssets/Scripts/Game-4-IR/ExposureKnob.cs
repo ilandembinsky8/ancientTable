@@ -8,15 +8,15 @@ public class ExposureKnob : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndD
     [SerializeField] private float minimumAngle = 135f;
     [SerializeField] private float maximumAngle = -135f;
 
-    [SerializeField, Min(1f)]
-    private float dragDistance = 200f;
+    [SerializeField, Min(1f)]private float dragDistance = 200f;
+    [SerializeField, Range(0f, 1f)]private float value = 0f;
 
-    [SerializeField, Range(0f, 1f)]
-    private float value = 0.5f;
-
+    //properties
     public float Value => value;
     public bool IsDragging { get; private set; }
-
+    public bool AllowMouseInput { get; set; } = true;
+    
+    //private variables
     private RectTransform dragArea;
     private Quaternion initialRotation;
     private float startMouseY;
@@ -26,7 +26,7 @@ public class ExposureKnob : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndD
     {
         dragArea = (RectTransform)transform;
         initialRotation = knobVisual.localRotation;
-        SetValue(value);
+        SetValue(0f);
     }
 
     public void SetValue(float newValue)
@@ -41,6 +41,9 @@ public class ExposureKnob : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (!AllowMouseInput)
+            return;
+
         if (eventData.button != PointerEventData.InputButton.Left)
             return;
 
@@ -54,7 +57,7 @@ public class ExposureKnob : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndD
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (!IsDragging)
+        if (!AllowMouseInput || !IsDragging)
             return;
 
         if (!TryGetLocalPosition(eventData, out Vector2 position))

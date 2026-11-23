@@ -18,16 +18,16 @@ public class WordingManager : MonoBehaviour
 
     //properties
     public string CurrentSentence { get; private set; } = "";
-    public IReadOnlyList<string> ExpectedCharacters => expected;
-    public IReadOnlyList<string> EnteredCharacters => entered;
+    public IReadOnlyList<string> ExpectedCharacters => _expected;
+    public IReadOnlyList<string> EnteredCharacters => _entered;
 
     //private variables
-    private readonly List<LetterSlot> slots = new List<LetterSlot>();
-    private readonly List<string> entered = new List<string>();
+    private readonly List<LetterSlot> _slots = new List<LetterSlot>();
+    private readonly List<string> _entered = new List<string>();
 
-    private List<string> expected = new List<string>();
-    private int sentenceIndex;
-    private bool transitioning;
+    private List<string> _expected = new List<string>();
+    private int _sentenceIndex;
+    private bool _transitioning;
 
 
     private void Start()
@@ -37,15 +37,15 @@ public class WordingManager : MonoBehaviour
 
     public void Append(string value)
     {
-        if (transitioning || expected.Count == 0 || string.IsNullOrEmpty(value))
+        if (_transitioning || _expected.Count == 0 || string.IsNullOrEmpty(value))
             return;
 
         foreach (string element in Split(value))
         {
-            if (entered.Count >= expected.Count)
+            if (_entered.Count >= _expected.Count)
                 break;
 
-            entered.Add(element);
+            _entered.Add(element);
         }
 
         RefreshDisplay();
@@ -54,57 +54,57 @@ public class WordingManager : MonoBehaviour
 
     public void DeleteLast()
     {
-        if (transitioning || entered.Count == 0)
+        if (_transitioning || _entered.Count == 0)
             return;
 
-        entered.RemoveAt(entered.Count - 1);
+        _entered.RemoveAt(_entered.Count - 1);
         RefreshDisplay();
     }
 
     public void Clear()
     {
-        if (transitioning)
+        if (_transitioning)
             return;
 
-        entered.Clear();
+        _entered.Clear();
         RefreshDisplay();
     }
 
     public void CheckAnswer()
     {
-        if (transitioning || expected.Count == 0 || entered.Count != expected.Count)
+        if (_transitioning || _expected.Count == 0 || _entered.Count != _expected.Count)
             return;
 
-        for (int i = 0; i < expected.Count; i++)
+        for (int i = 0; i < _expected.Count; i++)
         {
-            if (entered[i] != expected[i])
+            if (_entered[i] != _expected[i])
                 return;
         }
 
-        transitioning = true;
+        _transitioning = true;
         StartCoroutine(AdvanceAfterDelay());
     }
 
     private IEnumerator AdvanceAfterDelay()
     {
         yield return new WaitForSeconds(nextSentenceDelay);
-        LoadSentence(sentenceIndex + 1);
+        LoadSentence(_sentenceIndex + 1);
     }
 
     private void LoadSentence(int requestedIndex)
     {
-        foreach (LetterSlot slot in slots)
+        foreach (LetterSlot slot in _slots)
         {
             slot.gameObject.SetActive(false);
             Destroy(slot.gameObject);
         }
 
-        slots.Clear();
-        entered.Clear();
-        expected.Clear();
+        _slots.Clear();
+        _entered.Clear();
+        _expected.Clear();
 
         CurrentSentence = "";
-        transitioning = false;
+        _transitioning = false;
 
         if (sentences == null || sentences.Count == 0)
             return;
@@ -117,7 +117,7 @@ public class WordingManager : MonoBehaviour
             if (string.IsNullOrWhiteSpace(sentences[index]))
                 continue;
 
-            sentenceIndex = index;
+            _sentenceIndex = index;
             CurrentSentence = sentences[index].Normalize(NormalizationForm.FormC);
             break;
         }
@@ -125,13 +125,13 @@ public class WordingManager : MonoBehaviour
         if (CurrentSentence.Length == 0)
             return;
 
-        expected = Split(CurrentSentence);
+        _expected = Split(CurrentSentence);
 
-        foreach (string element in expected)
+        foreach (string element in _expected)
         {
             LetterSlot slot = Instantiate(slotPrefab, slotsParent);
             slot.Initialize(element == " ");
-            slots.Add(slot);
+            _slots.Add(slot);
         }
 
         RefreshDisplay();
@@ -139,10 +139,10 @@ public class WordingManager : MonoBehaviour
 
     private void RefreshDisplay()
     {
-        for (int i = 0; i < slots.Count; i++)
+        for (int i = 0; i < _slots.Count; i++)
         {
-            bool hasInput = i < entered.Count;
-            slots[i].Display(hasInput ? entered[i] : "", hasInput && entered[i] == expected[i]);
+            bool hasInput = i < _entered.Count;
+            _slots[i].Display(hasInput ? _entered[i] : "", hasInput && _entered[i] == _expected[i]);
         }
     }
 

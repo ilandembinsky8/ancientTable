@@ -2777,6 +2777,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5194309923395865828}
     m_Modifications:
     - target: {fileID: 1699674968806175669, guid: 94de5144ca18e73488b1c9c46bf96d95, type: 3}
+      propertyPath: useArduino
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699674968806175669, guid: 94de5144ca18e73488b1c9c46bf96d95, type: 3}
       propertyPath: wavelengthSlider
       value: 
       objectReference: {fileID: 2295966433486653584}
@@ -3696,7 +3700,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3527485228897098109, guid: d687f75797bb0bd488717fd9fe417c2c, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1523916372502822146, guid: d687f75797bb0bd488717fd9fe417c2c, type: 3}
     - {fileID: 5545368070022715869, guid: d687f75797bb0bd488717fd9fe417c2c, type: 3}
@@ -3724,7 +3729,7 @@ PrefabInstance:
       addedObject: {fileID: 8945630699800864324}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8466408465646495452, guid: d687f75797bb0bd488717fd9fe417c2c, type: 3}
-      insertIndex: 2
+      insertIndex: 1
       addedObject: {fileID: 6295458441021041238}
   m_SourcePrefab: {fileID: 100100000, guid: d687f75797bb0bd488717fd9fe417c2c, type: 3}
 --- !u!224 &2168483240846854067 stripped

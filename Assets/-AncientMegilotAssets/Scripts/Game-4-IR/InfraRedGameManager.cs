@@ -35,11 +35,11 @@ public class InfraRedGameManager : MonoBehaviour
     [Header("Events")]
     [SerializeField] private UnityEvent onScrollCompleted = new UnityEvent();
 
-    private ScrollScanData currentScroll;
-    private int currentStageIndex;
-    private float timeInsideTarget;
-    private ScanState state = ScanState.Selecting;
-
+    private ScrollScanData _currentScroll;
+    private int _currentStageIndex;
+    private float _timeInsideTarget;
+    private ScanState _state = ScanState.Selecting;
+    private bool _exposureReady;
 
 
     private void Start()
@@ -49,10 +49,11 @@ public class InfraRedGameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        state = ScanState.Selecting;
-        currentScroll = null;
-        currentStageIndex = 0;
-        timeInsideTarget = 0f;
+        _state = ScanState.Selecting;
+        _currentScroll = null;
+        _currentStageIndex = 0;
+        _timeInsideTarget = 0f;
+        _exposureReady = false;
 
         ClearCheckmarks();
 
@@ -78,7 +79,7 @@ public class InfraRedGameManager : MonoBehaviour
 
     public void SelectScroll(int index)
     {
-        if (state != ScanState.Selecting)
+        if (_state != ScanState.Selecting)
             return;
 
         if (index < 0 || index >= scrolls.Length)
@@ -92,14 +93,14 @@ public class InfraRedGameManager : MonoBehaviour
             return;
         }
 
-        currentScroll = selectedScroll;
-        currentStageIndex = 0;
-        timeInsideTarget = 0f;
-        state = ScanState.Wavelength;
+        _currentScroll = selectedScroll;
+        _currentStageIndex = 0;
+        _timeInsideTarget = 0f;
+        _state = ScanState.Wavelength;
 
         ClearCheckmarks();
 
-        scrollImage.sprite = currentScroll.initialImage;
+        scrollImage.sprite = _currentScroll.initialImage;
         scrollImage.preserveAspect = true;
         scrollImage.enabled = true;
 
@@ -113,22 +114,36 @@ public class InfraRedGameManager : MonoBehaviour
 
     private void Update()
     {
-        if (currentScroll == null)
+        if (_currentScroll == null)
             return;
 
         bool matches;
 
-        if (state == ScanState.Wavelength)
+        if (_state == ScanState.Wavelength)
         {
-            matches = currentScroll.stages[currentStageIndex]
+            matches = _currentScroll.stages[_currentStageIndex]
                 .Matches(scanInput.Wavelength);
         }
-        else if (state == ScanState.Exposure)
+        else if (_state == ScanState.Exposure)
         {
             float exposure = scanInput.Exposure;
 
-            matches = exposure >= currentScroll.exposureMin &&
-                      exposure <= currentScroll.exposureMax;
+            bool insideTarget =
+                exposure >= _currentScroll.exposureMin &&
+                exposure <= _currentScroll.exposureMax;
+
+            // First observe the knob outside the target.
+            // Then the player can enter it to confirm.
+            if (!_exposureReady)
+            {
+                if (!insideTarget)
+                    _exposureReady = true;
+
+                _timeInsideTarget = 0f;
+                return;
+            }
+
+            matches = insideTarget;
         }
         else
         {
@@ -137,18 +152,18 @@ public class InfraRedGameManager : MonoBehaviour
 
         if (!matches)
         {
-            timeInsideTarget = 0f;
+            _timeInsideTarget = 0f;
             return;
         }
 
-        timeInsideTarget += Time.deltaTime;
+        _timeInsideTarget += Time.deltaTime;
 
-        if (timeInsideTarget < confirmationDuration)
+        if (_timeInsideTarget < confirmationDuration)
             return;
 
-        timeInsideTarget = 0f;
+        _timeInsideTarget = 0f;
 
-        if (state == ScanState.Wavelength)
+        if (_state == ScanState.Wavelength)
             CompleteCurrentStage();
         else
             CompleteScroll();
@@ -156,20 +171,24 @@ public class InfraRedGameManager : MonoBehaviour
 
     private void CompleteCurrentStage()
     {
-        stageCheckmarks[currentStageIndex].SetActive(true);
-        currentStageIndex++;
+        stageCheckmarks[_currentStageIndex].SetActive(true);
+        _currentStageIndex++;
 
-        if (currentStageIndex >= currentScroll.stages.Length)
-            state = ScanState.Exposure;
+        if (_currentStageIndex >= _currentScroll.stages.Length)
+        {
+            _state = ScanState.Exposure;
+            _exposureReady = false;
+            _timeInsideTarget = 0f;
+        }
 
         ShowCurrentInstruction();
     }
 
     private void CompleteScroll()
     {
-        state = ScanState.Won;
+        _state = ScanState.Won;
 
-        scrollImage.sprite = currentScroll.readableImage;
+        scrollImage.sprite = _currentScroll.readableImage;
         instructionText.text = "הסריקה הושלמה!";
 
         scanControls.SetActive(false);
@@ -180,13 +199,13 @@ public class InfraRedGameManager : MonoBehaviour
 
     private void ShowCurrentInstruction()
     {
-        if (state == ScanState.Exposure)
+        if (_state == ScanState.Exposure)
         {
             instructionText.text = "כוונו את החשיפה כדי לחשוף את הכתב";
             return;
         }
 
-        ScanStage stage = currentScroll.stages[currentStageIndex];
+        ScanStage stage = _currentScroll.stages[_currentStageIndex];
         instructionText.text = $"כוונו את אורך הגל: {stage.stageName}";
     }
 
@@ -223,6 +242,6 @@ public class InfraRedGameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        timeInsideTarget = 0f;
+        _timeInsideTarget = 0f;
     }
 }
