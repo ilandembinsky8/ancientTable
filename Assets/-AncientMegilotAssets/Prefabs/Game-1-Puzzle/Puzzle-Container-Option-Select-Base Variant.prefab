@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 901708269305803001, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 941714633566362555, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -124,6 +128,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3285759761317905476, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530044908817860252, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635286027992644752, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      propertyPath: _optionButtonPrefab
+      value: 
+      objectReference: {fileID: 5678183849844008863}
     - target: {fileID: 3901906002365826497, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -192,9 +208,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6513892566987254477, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6513892566987254477, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6952154916991320505, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
       propertyPath: m_Name
       value: Puzzle-Container-Option-Select-Base Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357545917045005480, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357545917045005480, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8012502690984101044, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -251,5 +283,174 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6952154916991320505, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5678183849844008863}
+    - targetCorrespondingSourceObject: {fileID: 6952154916991320505, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2080064082342679592}
   m_SourcePrefab: {fileID: 100100000, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+--- !u!114 &2149335272495649008 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1623922154117392225, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  m_PrefabInstance: {fileID: 818157127303427985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &2426673609365841557 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3096202035910873348, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  m_PrefabInstance: {fileID: 818157127303427985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &3914185557559950048 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4398704655518715249, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  m_PrefabInstance: {fileID: 818157127303427985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719637614610822696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &4187251829957234080 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3550726327326439985, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  m_PrefabInstance: {fileID: 818157127303427985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &5854489667810549084 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6513892566987254477, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  m_PrefabInstance: {fileID: 818157127303427985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &7719637614610822696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6952154916991320505, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  m_PrefabInstance: {fileID: 818157127303427985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5678183849844008863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719637614610822696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 2
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: -7095314115028417931, guid: bae813264df859d4a8dbc85124be3df6, type: 3}
+    m_PressedSprite: {fileID: -7095314115028417931, guid: bae813264df859d4a8dbc85124be3df6, type: 3}
+    m_SelectedSprite: {fileID: -7095314115028417931, guid: bae813264df859d4a8dbc85124be3df6, type: 3}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 3914185557559950048}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2080064082342679592}
+        m_TargetAssemblyTypeName: PuzzleSetCard, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2080064082342679592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719637614610822696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b44f838365c7b47b6e5b4267d2f610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleSetCard
+  _onSelected:
+    m_PersistentCalls:
+      m_Calls: []
+  _content: {fileID: 11400000, guid: 3d3bb4c9bce2b1241a6b1c56adb5d12f, type: 2}
+  _setId: 
+  _titleText: {fileID: 4187251829957234080}
+  _lines:
+  - id: {fileID: 7872833748772334393}
+    description: {fileID: 2426673609365841557}
+  - id: {fileID: 5854489667810549084}
+    description: {fileID: 2149335272495649008}
+  _piecesText: {fileID: 8746867196655373659}
+  _piecesFormat: "{0} \u05D7\u05DC\u05E7\u05D9\u05DD"
+--- !u!114 &7872833748772334393 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7357545917045005480, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  m_PrefabInstance: {fileID: 818157127303427985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &8746867196655373659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8230804192092420810, guid: 212ad174bf61df5458d25cf9c0628d5a, type: 3}
+  m_PrefabInstance: {fileID: 818157127303427985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI

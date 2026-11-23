@@ -45,7 +45,26 @@ public class PuzzleBoard : MonoBehaviour
 
     public PuzzleSetSO CurrentSet => _set;
 
+    PuzzleSetSO _pending;
+
+    // The game flow may pick a set while the board is still hidden; build it once the board is shown,
+    // when its layout is final.
+    void OnEnable()
+    {
+        if (_pending == null) return;
+        PuzzleSetSO set = _pending;
+        _pending = null;
+        Canvas.ForceUpdateCanvases();
+        Build(set);
+    }
+
     public void LoadSet(PuzzleSetSO set)
+    {
+        if (!isActiveAndEnabled) { _pending = set; return; }
+        Build(set);
+    }
+
+    void Build(PuzzleSetSO set)
     {
         ClearPieces();
         _set = set;
