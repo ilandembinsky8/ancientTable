@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -15,6 +16,10 @@ public class WordingManager : MonoBehaviour
 
     [Header("Completion")]
     [SerializeField, Min(0)] private float nextSentenceDelay = 0.8f;
+
+    //events
+    public event Action OnSentenceCompleted;
+    public event Action OnAllSentencesCompleted;
 
     //properties
     public string CurrentSentence { get; private set; } = "";
@@ -82,6 +87,11 @@ public class WordingManager : MonoBehaviour
         }
 
         _transitioning = true;
+        OnSentenceCompleted?.Invoke();
+
+        if (IsLastSentence())
+            OnAllSentencesCompleted?.Invoke();
+
         StartCoroutine(AdvanceAfterDelay());
     }
 
@@ -155,5 +165,16 @@ public class WordingManager : MonoBehaviour
             result.Add(enumerator.GetTextElement());
 
         return result;
+    }
+
+    private bool IsLastSentence()
+    {
+        for (int i = _sentenceIndex + 1; i < sentences.Count; i++)
+        {
+            if (!string.IsNullOrWhiteSpace(sentences[i]))
+                return false;
+        }
+
+        return true;
     }
 }
