@@ -5,8 +5,6 @@ using TMPro;
 
 public class IntroductionHandler : MonoBehaviour
 {
-    const string INTRODUCTION_HEB_BUTTON_TEXT = "בחרו מקבץ להרכבה";
-    const string INTRODUCTION_ENG_BUTTON_TEXT = "text tba";
     const string SELECTED_INTRODUCTION_HEB_BUTTON_TEXT = "התחילו במלאכה";
     const string SELECTED_INTRODUCTION_ENG_BUTTON_TEXT = "text tba";
 
@@ -14,13 +12,21 @@ public class IntroductionHandler : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _buttonText;
     [SerializeField] private Button _introductionButton;
 
+    private string introduction_heb_button_text = "התחלו במלאכה";
+
+    private void Awake()
+    {
+        if (introduction_heb_button_text != null)
+            introduction_heb_button_text = _buttonText.text;
+    }
+
     public void OnOptionSelected()
     {
         _buttonText.text = SELECTED_INTRODUCTION_HEB_BUTTON_TEXT;
     }
     public void ResetInstructions()
     {
-        _buttonText.text = INTRODUCTION_HEB_BUTTON_TEXT;
+        _buttonText.text = introduction_heb_button_text;
     }
 
     public void SubscribeToIntroductionButtonPressed(UnityAction action)
