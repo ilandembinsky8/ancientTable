@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2992144976073220665}
   - component: {fileID: 3266403199350904754}
-  - component: {fileID: 4010760482245517858}
   m_Layer: 5
   m_Name: Game 4
   m_TagString: Untagged
@@ -63,20 +62,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &4010760482245517858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2392895571966673396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d8edcb829c2fb49b74d5b1c9062b8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ArduinoManager
-  portName: COM9
-  potentiometerValue: 0
 --- !u!1 &6237372724298432384
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,39 +562,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2462957758954835880, guid: ba1f60ae3e727824cae0603e3bdac12d, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 2668086412972563681}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba1f60ae3e727824cae0603e3bdac12d, type: 3}
 --- !u!224 &5724399642290752398 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1497548021103859359, guid: ba1f60ae3e727824cae0603e3bdac12d, type: 3}
   m_PrefabInstance: {fileID: 6609451197862583569}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8761563756509172409 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2462957758954835880, guid: ba1f60ae3e727824cae0603e3bdac12d, type: 3}
-  m_PrefabInstance: {fileID: 6609451197862583569}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2668086412972563681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8761563756509172409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dd9d8dce10480d468171b7599bf01d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Game4Manager
-  _mainContainer: {fileID: 0}
-  _navigationBar: {fileID: 0}
-  _sideListContainer: {fileID: 0}
-  _defaultMainIntroductionContainer: {fileID: 0}
-  _mainHeaderWhiteTextObj: {fileID: 0}
-  _mainHeaderYellowTextObj: {fileID: 0}
-  _sideHeaderYellowTextObj: {fileID: 0}
-  _sideOptionSelectPrefab: {fileID: 0}
-  _gameMainPrefab: {fileID: 0}
