@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OptionSelectBase
   _optionHeaderText: {fileID: 3550726327326439985}
-  _optionButtonPrefab: {fileID: 3285759761317905476}
+  _selectButton: {fileID: 3285759761317905476}
   _buttonText: {fileID: 8230804192092420810}
 --- !u!222 &3466465578905177628
 CanvasRenderer:
@@ -177,7 +177,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 3
-  m_Spacing: 0
+  m_Spacing: 12
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -426,6 +426,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3730946869160021303, guid: 67561297b5f407e4895203abc8eda696, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730946869160021303, guid: 67561297b5f407e4895203abc8eda696, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -443,6 +447,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9163231188469104795, guid: 67561297b5f407e4895203abc8eda696, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163231188469104795, guid: 67561297b5f407e4895203abc8eda696, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9163231188469104795, guid: 67561297b5f407e4895203abc8eda696, type: 3}
@@ -677,6 +685,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3730946869160021303, guid: 67561297b5f407e4895203abc8eda696, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730946869160021303, guid: 67561297b5f407e4895203abc8eda696, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -698,6 +710,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9163231188469104795, guid: 67561297b5f407e4895203abc8eda696, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163231188469104795, guid: 67561297b5f407e4895203abc8eda696, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9163231188469104795, guid: 67561297b5f407e4895203abc8eda696, type: 3}

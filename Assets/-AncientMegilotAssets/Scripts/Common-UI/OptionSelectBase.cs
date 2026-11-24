@@ -7,16 +7,17 @@ public class OptionSelectBase : MonoBehaviour
 {
     [Header("Option Select Base")]
     [SerializeField] protected TextMeshProUGUI _optionHeaderText;
-    [SerializeField] protected Button _optionButtonPrefab;
+    [SerializeField] protected Button _selectButton;
+    [Header("Optional")]
     [SerializeField] protected TextMeshProUGUI _buttonText;
 
     public virtual void SubscribeToActiveOptionButton(UnityAction action)
     {
-        _optionButtonPrefab.onClick.AddListener(action);
+        _selectButton.onClick.AddListener(action);
     }
     public virtual void UnSubscribeFromActiveOptionButton(UnityAction action)
     {
-        _optionButtonPrefab.onClick.RemoveListener(action);
+        _selectButton.onClick.RemoveListener(action);
     }
 
 }
