@@ -15,5 +15,5 @@ MonoBehaviour:
   title: "\u05D3\u05D1\u05E8\u05D9 \u05DE\u05E9\u05DB\u05D9\u05DC \u05DC\u05D1\u05E0\u05D9 \u05E9\u05D7\u05E8"
   location: "\u05DE\u05E2\u05E8\u05EA \u05E7\u05D5\u05DE\u05E8\u05D0\u05DF 4"
   catalogId: 4Q249
-  image: {fileID: 21300000, guid: bb87aa46cb539c74c94d16c3e5167bdd, type: 3}
+  image: {fileID: 21300000, guid: 1f8d8abaa4d419c41a30ebec6963124b, type: 3}
   correctScript: {fileID: 11400000, guid: cb8012a8935a8a94da47e3117a9f70a1, type: 2}
