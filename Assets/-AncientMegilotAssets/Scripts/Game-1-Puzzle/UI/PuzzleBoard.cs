@@ -34,7 +34,7 @@ public class PuzzleBoard : MonoBehaviour
     [Header("Events")]
     [SerializeField] UnityEvent<PuzzleSetSO> _onSetLoaded;
     [SerializeField] UnityEvent _onPiecePlaced;
-    [SerializeField] UnityEvent<PuzzleSetSO> _onCompleted;
+    [SerializeField] UnityEvent<PuzzleSetSO> _onCompleted;// split to _onCompletedPuzzleFirst & _onCompletedPuzzleAll / make a list
 
     readonly List<PuzzlePiece> _pieces = new List<PuzzlePiece>();
     PuzzleSetSO _set;

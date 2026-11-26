@@ -4,10 +4,10 @@ using System;
 
 public class SideScrollHandler : MonoBehaviour
 {
-    public Action OnAnySideOptionSelected;
+    public Action OnAnySideOptionSelected;// add ID for the option select card
     private List<OptionSelectBase> _optionButtons = new List<OptionSelectBase>();
 
-    private void Start()
+    private void Start()// remove adding buttons from here to when the buttons actually spawn.
     {
         foreach (OptionSelectBase optionButton in gameObject.GetComponentsInChildren<OptionSelectBase>())
         {
