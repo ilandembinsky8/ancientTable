@@ -22,4 +22,5 @@ public class PopupWindow : MonoBehaviour
     [SerializeField] private Button _continueButton;
     [SerializeField] private Button _closeButton;
 
+    //fill in usage for puzzle board event connection via inspector
 }
