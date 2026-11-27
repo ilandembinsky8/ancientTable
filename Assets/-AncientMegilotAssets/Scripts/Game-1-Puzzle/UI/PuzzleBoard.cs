@@ -37,6 +37,15 @@ public class PuzzleBoard : MonoBehaviour
     private UnityEvent<ScrollDataSO> OnAnyPuzzleCompleted = new UnityEvent<ScrollDataSO>();
 
     readonly List<PuzzlePiece> _pieces = new List<PuzzlePiece>();
+
+    #region Scroll Tracking added
+    // The index ties each piece to the scroll puzzle it belongs to in the current set.
+    readonly Dictionary<PuzzlePiece, int> _pieceScrollIndices = new Dictionary<PuzzlePiece, int>();
+    // These counts share the scroll index used by _pieceScrollIndices.
+    readonly List<int> _scrollPieceCounts = new List<int>();
+    readonly List<int> _placedPerScroll = new List<int>();
+    #endregion
+
     PuzzleSetSO _set;
     int _placed;
     Vector3 _contentHome;
@@ -67,6 +76,10 @@ public class PuzzleBoard : MonoBehaviour
     void Build(PuzzleSetSO set)
     {
         ClearPieces();
+        _pieceScrollIndices.Clear();
+        _scrollPieceCounts.Clear();
+        _placedPerScroll.Clear();
+
         _set = set;
         _placed = 0;
         if (!_hasHome) { _contentHome = _boardContent.localPosition; _hasHome = true; }
@@ -75,6 +88,9 @@ public class PuzzleBoard : MonoBehaviour
 
         for (int s = 0; s < _silhouettes.Count; s++)
         {
+            _scrollPieceCounts.Add(0);
+            _placedPerScroll.Add(0);
+
             ScrollDataSO scroll = s < set.scrolls.Count ? set.scrolls[s] : null;
             ScrollData data = scroll != null ? scroll.Data : null;
             Image outline = _silhouettes[s];
@@ -97,6 +113,8 @@ public class PuzzleBoard : MonoBehaviour
                                FromFigma(_pieceLayer, piece.startPosition), piece.startRotation,
                                rt.localPosition + (Vector3)piece.endPosition, piece.endRotation);
                 _pieces.Add(instance);
+                _pieceScrollIndices.Add(instance, s);
+                _scrollPieceCounts[s]++;
             }
         }
 
@@ -108,13 +126,19 @@ public class PuzzleBoard : MonoBehaviour
     // Called by a piece when it is dropped.
     public void TryPlace(PuzzlePiece piece)
     {
+        if (!_pieceScrollIndices.TryGetValue(piece, out int scrollIndex)) return;
+
         Vector3 inBoard = _boardContent.InverseTransformPoint(piece.Rect.position);
         if (Vector2.Distance(inBoard, piece.Target) > _snapDistance) return;
 
         piece.Lock(_boardContent);
         _placed++;
         OnAnyPiecePlaced.Invoke(_placed);
-        if (_placed >= _pieces.Count) OnAnyPuzzleCompleted.Invoke(_set.scrolls[0]); ////FIX THIS
+
+        // A set can contain multiple scroll puzzles, so only compare placements for this piece's scroll.
+        _placedPerScroll[scrollIndex]++;
+        if (_scrollPieceCounts[scrollIndex] > 0 && _placedPerScroll[scrollIndex] == _scrollPieceCounts[scrollIndex])
+            OnAnyPuzzleCompleted.Invoke(_set.scrolls[scrollIndex]);
     }
 
     // Shows more of the top of the board.
