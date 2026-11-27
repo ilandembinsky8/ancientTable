@@ -33,8 +33,8 @@ public class PuzzleBoard : MonoBehaviour
 
     [Header("Events")]
     [SerializeField] UnityEvent<PuzzleSetSO> _onSetLoaded;
-    [SerializeField] UnityEvent _onPiecePlaced;
-    [SerializeField] UnityEvent<PuzzleSetSO> _onCompleted;// split to _onCompletedPuzzleFirst & _onCompletedPuzzleAll / make a list
+    private UnityEvent<int> OnAnyPiecePlaced = new UnityEvent<int>();
+    private UnityEvent<ScrollDataSO> OnAnyPuzzleCompleted = new UnityEvent<ScrollDataSO>();
 
     readonly List<PuzzlePiece> _pieces = new List<PuzzlePiece>();
     PuzzleSetSO _set;
@@ -113,8 +113,8 @@ public class PuzzleBoard : MonoBehaviour
 
         piece.Lock(_boardContent);
         _placed++;
-        _onPiecePlaced.Invoke();
-        if (_placed >= _pieces.Count) _onCompleted.Invoke(_set);
+        OnAnyPiecePlaced.Invoke(_placed);
+        if (_placed >= _pieces.Count) OnAnyPuzzleCompleted.Invoke(_set.scrolls[0]); ////FIX THIS
     }
 
     // Shows more of the top of the board.
@@ -169,4 +169,10 @@ public class PuzzleBoard : MonoBehaviour
         local.z = 0f;
         return local;
     }
+
+    public void SubscribeToAnyPiecePlaced(UnityAction<int> action) => OnAnyPiecePlaced.AddListener(action);
+    public void UnsubscribeFromAnyPiecePlaced(UnityAction<int> action) => OnAnyPiecePlaced.RemoveListener(action);
+    public void SubscribeToAnyPuzzleCompleted(UnityAction<ScrollDataSO> action) => OnAnyPuzzleCompleted.AddListener(action);
+    public void UnsubscribeFromAnyPuzzleCompleted(UnityAction<ScrollDataSO> action) => OnAnyPuzzleCompleted.RemoveListener(action);
+
 }

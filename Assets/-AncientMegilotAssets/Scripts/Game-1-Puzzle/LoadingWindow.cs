@@ -22,13 +22,24 @@ public class LoadingWindow : MonoBehaviour
         _closeButton.onClick.RemoveAllListeners();
     }
 
-    public void ShowLoadingWindow(string loadingText)
+    /// <summary>
+    /// Activates the loading window and starts the loading process with a default time of 2 seconds. (exists overload for setting exact time)
+    /// The loading bar will fill up over the specified time, and the close button will become active once the loading is complete.
+    /// </summary>
+    /// <param name="loadingText"></param>
+    public void StartLoading(string loadingText)
     {
         _loadingText.text = loadingText;
         _visualParentObject.SetActive(true);
         _loadingBar.StartBarLoading(2f);
     }
-    public void ShowLoadingWindow(float loadingTime, string loadingText)
+    /// <summary>
+    /// Activates the loading window and starts the loading process with the specified time.
+    /// The loading bar will fill up over the specified time, and the close button will become active once the loading is complete.
+    /// </summary>
+    /// <param name="loadingTime"></param>
+    /// <param name="loadingText"></param>
+    public void StartLoading(float loadingTime, string loadingText)
     {
         _loadingText.text = loadingText;
         _visualParentObject.SetActive(true);

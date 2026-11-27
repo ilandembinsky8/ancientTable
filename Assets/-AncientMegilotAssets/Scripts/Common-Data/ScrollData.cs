@@ -18,6 +18,7 @@ public class ScrollData
     public string language;              // שפת כתב
     public string script;                // כתב
     public string info;                  // מידע על המגילה
+    public string translationHeader;     // כותרת של התרגום
     public string translation;           // תרגום של המגילה
 }
 
