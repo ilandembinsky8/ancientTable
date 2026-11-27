@@ -12,6 +12,7 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     PuzzleBoard _board;
     RectTransform _dragLayer;
     Vector3 _grabOffset;
+    Vector3 _startPosition;
 
     public string PieceId { get; private set; }
     // Spot inside the board content (local position).
@@ -29,7 +30,8 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         _image.sprite = sprite;
         _rect.anchorMin = _rect.anchorMax = _rect.pivot = new Vector2(0.5f, 0.5f);
         _rect.sizeDelta = sprite.rect.size; // 1:1, like the Figma
-        _rect.localPosition = start;
+        _startPosition = start;
+        _rect.localPosition = _startPosition;
         _rect.localEulerAngles = new Vector3(0f, 0f, startRotation);
         Target = target;
         TargetRotation = targetRotation;
@@ -53,7 +55,12 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     public void OnEndDrag(PointerEventData eventData)
     {
         if (IsPlaced) return;
-        _board.TryPlace(this);
+        bool pieceSuccessfullyPlaced = _board.TryPlace(this);
+        
+        if (!pieceSuccessfullyPlaced && _rect.localPosition.x > -150f)//hard coded distance left of the board to not reset ok pieces
+        {
+            _rect.localPosition = _startPosition;
+        }
     }
 
     // Moves into the board content at its spot and stops reacting to drags.

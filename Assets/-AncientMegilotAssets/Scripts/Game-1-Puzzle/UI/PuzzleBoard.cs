@@ -124,12 +124,12 @@ public class PuzzleBoard : MonoBehaviour
     }
 
     // Called by a piece when it is dropped.
-    public void TryPlace(PuzzlePiece piece)
+    public bool TryPlace(PuzzlePiece piece)
     {
-        if (!_pieceScrollIndices.TryGetValue(piece, out int scrollIndex)) return;
+        if (!_pieceScrollIndices.TryGetValue(piece, out int scrollIndex)) return false; ;
 
         Vector3 inBoard = _boardContent.InverseTransformPoint(piece.Rect.position);
-        if (Vector2.Distance(inBoard, piece.Target) > _snapDistance) return;
+        if (Vector2.Distance(inBoard, piece.Target) > _snapDistance) return false; ;
 
         piece.Lock(_boardContent);
         _placed++;
@@ -139,6 +139,8 @@ public class PuzzleBoard : MonoBehaviour
         _placedPerScroll[scrollIndex]++;
         if (_scrollPieceCounts[scrollIndex] > 0 && _placedPerScroll[scrollIndex] == _scrollPieceCounts[scrollIndex])
             OnAnyPuzzleCompleted.Invoke(_set.scrolls[scrollIndex]);
+        
+        return true;
     }
 
     // Shows more of the top of the board.
